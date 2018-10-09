@@ -1,17 +1,13 @@
-import { connect } from 'react-redux';
+import { connect } from 'react-redux'
 
-import Page2Component from "../../components/Page2";
+import Page2Component from '../../components/Page2/index'
 
-const mapStateToProps = (state) => {
-    return {
+const mapStateToProps = () => ({
 
-    }
-};
+})
 
-const mapDispatchToProps = (dispatch) => {
-    return {
+const mapDispatchToProps = () => ({
 
-    };
-}
-const Page2Container = connect(mapStateToProps, mapDispatchToProps)(Page2Component);
-export default Page2Container;
+})
+const Page2Container = connect(mapStateToProps, mapDispatchToProps)(Page2Component)
+export default Page2Container

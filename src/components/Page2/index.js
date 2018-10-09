@@ -1,26 +1,35 @@
-import React, { Component } from 'react'; 
-import { View, Text } from 'react-native';
+import React, { Component } from 'react'
+import { View, Text } from 'react-native'
+
+const styles = {
+  Page2ComponentStyle: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#F5FCFF'
+  }
+}
 
 class Page2Component extends Component {
-    render() {
-        const { Page2Component } = styles;
+  constructor() {
+    super()
 
-        return (
-            <View style={Page2Component}>
-                <Text>Page2Component</Text>
-                <Text>Page 2</Text>
-            </View>
-        );
+    this.state = {
+      loading: false
     }
-};
+  }
 
-const styles = { 
-  Page2Component: { 
-    flex: 1,
-    justifyContent: 'center', 
-    alignItems: 'center', 
-    backgroundColor: '#F5FCFF', 
-  }, 
-};
+  render() {
+    const { Page2ComponentStyle } = styles
+    const { loading } = this.state
 
-export default Page2Component;
+    return (
+      <View style={Page2ComponentStyle}>
+        <Text>Page2Component</Text>
+        <Text>{ loading !== 'false' ? 'Loading ...' : 'Chargement terminé'}</Text>
+      </View>
+    )
+  }
+}
+
+export default Page2Component
