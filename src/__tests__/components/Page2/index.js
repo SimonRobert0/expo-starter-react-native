@@ -1,4 +1,4 @@
-// __tests__/components/Page1.js
+// __tests__/components/Page2.js
 import React from 'react';
 import Page2 from '../../../components/Page2';
 
