@@ -24,6 +24,7 @@
       "**/*"
     ],
     "ios": {
+      "bundleIdentifier": "com.simon-robert.expo-starter",
       "supportsTablet": true
     }
   }
