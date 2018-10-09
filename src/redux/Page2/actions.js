@@ -1,0 +1,6 @@
+const page2Actions = {
+    REQUEST_PAGE_2: 'REQUEST_PAGE_2',
+    REQUEST_PAGE_2_SUCCESS: 'REQUEST_PAGE_2_SUCCESS',
+    REQUEST_PAGE_2_ERROR: 'REQUEST_PAGE_2_ERROR'
+};
+export default page2Actions;
